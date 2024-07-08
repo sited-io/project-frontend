@@ -1,0 +1,33 @@
+{
+  "name": "project-frontend",
+  "type": "module",
+  "scripts": {
+    "dev": "vinxi dev --port 8002",
+    "build": "vinxi build --port 8002",
+    "start": "vinxi start --port 8002",
+    "version": "vinxi version"
+  },
+  "dependencies": {
+    "@material/web": "^1.5.1",
+    "@mbarzda/solid-i18next": "^1.4.1",
+    "@solidjs/meta": "^0.29.4",
+    "@solidjs/router": "^0.13.6",
+    "@solidjs/start": "^1.0.2",
+    "i18next": "^23.11.5",
+    "i18next-browser-languagedetector": "^8.0.0",
+    "i18next-icu": "^2.3.0",
+    "lodash": "^4.17.21",
+    "solid-js": "^1.8.17",
+    "vinxi": "^0.3.12"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.6",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.4",
+    "vitest": "^1.6.0"
+  }
+}

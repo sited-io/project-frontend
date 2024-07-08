@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Roboto", "Noto Sans", Arial, Helvetica, sans-serif;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  --font-display: normal normal 400 36px "Noto Sans";
+  --font-headline: normal normal 400 24px "Noto Sans";
+  --font-title: normal normal 500 20px "Noto Sans";
+  --font-label: normal normal 500 16px "Roboto";
+  --font-body: normal normal 400 16px "Roboto";
+  --font-detail: normal normal 400 14px "Roboto";
+}
+
+/* .font-display {
+  font: var(--font-display);
+}
+
+.font-headline {
+  font: var(--font-headline);
+}
+
+.font-title {
+  font: var(--font-title);
+}
+
+.font-label {
+  font: var(--font-label);
+}
+
+.font-body {
+  font: var(--font-body);
+}
+
+.font-detail {
+  font: var(--font-detail);
+} */
