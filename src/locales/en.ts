@@ -3,7 +3,7 @@ import { TKEYS } from "./keys";
 export const EN: typeof TKEYS = {
   footer: {
     summary:
-      "Empowering individuals and businesses to effortlessly create websites and online shops with automated design and comprehensive e-commerce tools.",
+      "Empowering individuals and businesses to effortlessly create websites and online shops with automated design and comprehensive ecommerce tools.",
   },
   "landing-page": {
     "get-started": "Get Started!",
@@ -26,12 +26,12 @@ export const EN: typeof TKEYS = {
             "Focus on what you do best - providing great content. Our platform automatically creates a tailored website for you, ensuring a cohesive and attractive design without needing any design skills.",
         },
         "2": {
-          title: "Seamless E-commerce Integration",
+          title: "Seamless Ecommerce Integration",
           content:
-            "Whether you sell physical products, digital downloads, or offer appointments for services, our integrated e-commerce functionality has you covered. Manage your products, track orders, and process payments with ease.",
+            "Whether you sell physical products, digital downloads, or offer appointments for services, our integrated ecommerce functionality has you covered. Manage your products, track orders, and process payments with ease.",
         },
         "3": {
-          title: "Simple, Transparent Pricing",
+          title: "Simple and Transparent Pricing",
           content:
             "We only make money when you do. Our platform operates on a small transaction fee when you sell products through your online shop. No hidden fees, just straightforward pricing.",
         },
@@ -59,7 +59,7 @@ export const EN: typeof TKEYS = {
           },
         },
         "2": {
-          title: "Powerful E-commerce Tools",
+          title: "Powerful Ecommerce Tools",
           sections: {
             "1": {
               title: "Physical & Digital Products",
@@ -69,7 +69,7 @@ export const EN: typeof TKEYS = {
             "2": {
               title: "Appointment Scheduling",
               content:
-                "Offer services and manage appointments directly from your",
+                "Offer services and manage appointments directly from your site.",
             },
             "3": {
               title: "Recurring Payments",
