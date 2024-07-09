@@ -11,6 +11,7 @@ import { Layout } from "./layout/Layout";
 import { LOCALES } from "./locales";
 import "./material-icons.css";
 import "./normalize.css";
+import { Suspense } from "solid-js";
 
 export default function App() {
   const i18nextInstance = i18next.createInstance({
@@ -23,9 +24,11 @@ export default function App() {
   return (
     <MetaProvider>
       <TransProvider instance={i18nextInstance}>
-        <Router root={Layout}>
-          <FileRoutes />
-        </Router>
+        <Suspense>
+          <Router root={Layout}>
+            <FileRoutes />
+          </Router>
+        </Suspense>
       </TransProvider>
     </MetaProvider>
   );

@@ -30,10 +30,19 @@ export function getNextLanguageKey(currentLanguageKey: string) {
     throw new Error("List of languages was empty");
   }
 
-  const currentIndex = _.findIndex(
+  let currentIndex = _.findIndex(
     languageKeys,
     (key) => key === currentLanguageKey
   );
+
+  // find language key with location like "en-US" --> "en"
+  if (currentIndex < 0) {
+    const cleanedLangageKey = currentLanguageKey.split("-")[0];
+    currentIndex = _.findIndex(
+      languageKeys,
+      (key) => key === cleanedLangageKey
+    );
+  }
 
   const nextIndex = currentIndex + 1;
 
