@@ -36,7 +36,7 @@ export const EN: typeof TKEYS = {
         "2": {
           title: "Seamless Ecommerce Integration",
           content:
-            "Whether you sell physical products, digital downloads, or offer appointments for services, our integrated ecommerce functionality has you covered. Manage your products, track orders, and process payments with ease.",
+            "Whether you sell physical products, digital downloads, or offer appointments for services (planned), our integrated ecommerce functionality has you covered. Manage your products, track orders, and process payments with ease.",
         },
         "3": {
           title: "Simple and Transparent Pricing",
@@ -77,7 +77,7 @@ export const EN: typeof TKEYS = {
             "2": {
               title: "Appointment Scheduling",
               content:
-                "Offer services and manage appointments directly from your site.",
+                "Offer services and manage appointments directly from your site. (planned)",
             },
             "3": {
               title: "Recurring Payments",

@@ -36,7 +36,7 @@ export const DE: typeof TKEYS = {
         "2": {
           title: "Nahtlose E-Commerce-Integration",
           content:
-            "Egal, ob Du physische Produkte, digitale Downloads oder Termine für Dienstleistungen anbietest - unsere integrierte E-Commerce-Funktionalität deckt alles ab. Verwalte Deine Produkte, verfolge Bestellungen und verarbeite Zahlungen mühelos.",
+            "Egal, ob Du physische Produkte, digitale Downloads oder Termine für Dienstleistungen (in planung) anbietest - unsere integrierte E-Commerce-Funktionalität deckt alles ab. Verwalte Deine Produkte, verfolge Bestellungen und verarbeite Zahlungen mühelos.",
         },
         "3": {
           title: "Einfache, transparente Preisgestaltung",
@@ -77,9 +77,9 @@ export const DE: typeof TKEYS = {
                 "Verkaufe sowohl physische Artikel als auch digitale Downloads mühelos.",
             },
             "2": {
-              title: "Terminbuchung",
+              title: "Terminbuchungen",
               content:
-                "Biete Dienstleistungen an und verwalte Termine direkt von Deiner Website.",
+                "Biete Dienstleistungen an und verwalte Termine direkt von Deiner Website. (in planung)",
             },
             "3": {
               title: "Wiederkehrende Zahlungen",
