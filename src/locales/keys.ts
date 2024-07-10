@@ -1,4 +1,5 @@
 export const TKEYS = {
+  title: "title",
   header: {
     actions: {
       "go-to-home": "header.actions.go-to-home",

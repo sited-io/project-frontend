@@ -1,6 +1,7 @@
 import { TKEYS } from "./keys";
 
 export const EN: typeof TKEYS = {
+  title: "sited.io | effortlessly create websites and online shops",
   header: {
     actions: {
       "go-to-home": "Go to homepage",
