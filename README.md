@@ -1,4 +1,4 @@
-# Project Website for sited.io
+# Project frontend for sited.io
 
 # SolidStart
 
