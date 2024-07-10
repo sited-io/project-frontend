@@ -22,14 +22,18 @@ export default function App() {
   i18nextInstance.use(ICU);
 
   return (
-    <MetaProvider>
-      <TransProvider instance={i18nextInstance}>
-        <Suspense>
-          <Router root={Layout}>
-            <FileRoutes />
-          </Router>
-        </Suspense>
-      </TransProvider>
-    </MetaProvider>
+    <Router
+      root={(props) => (
+        <MetaProvider>
+          <TransProvider instance={i18nextInstance}>
+            <Suspense>
+              <Layout>{props.children}</Layout>
+            </Suspense>
+          </TransProvider>
+        </MetaProvider>
+      )}
+    >
+      <FileRoutes />
+    </Router>
   );
 }

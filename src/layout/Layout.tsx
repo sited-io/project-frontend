@@ -9,10 +9,6 @@ import { TKEYS } from "~/locales";
 export function Layout(props: ParentProps) {
   return (
     <>
-      <Title>
-        <Trans key={TKEYS.title} />
-      </Title>
-
       <Header />
 
       <main class="min-h-screen overflow-auto break-words text-balance text-dark dark:text-light bg-light dark:bg-dark">
