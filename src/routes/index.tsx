@@ -35,9 +35,9 @@ export default function Home() {
 
       {/* Why Choose Us? */}
       <section class="container max-w-screen-lg flex flex-col justify-center p-6 my-6 mx-auto">
-        {/* <h3 class="mb-6 text-2xl font-display font-bold">
+        <h3 class="mb-6 text-center text-2xl font-display md:text-start">
           <Trans key={TKEYS["landing-page"]["why-choose-us"].title} />
-        </h3> */}
+        </h3>
         <div class="flex flex-col justify-center md:flex-row">
           <div class="my-4 p-4 flex-1 text-center md:mx-2">
             <h4 class="mb-4 text-xl font-display font-semibold">
@@ -355,7 +355,7 @@ export default function Home() {
 
       {/* Ready to Launch Your Website? */}
       <section class="container max-w-screen-lg flex flex-col justify-center p-6 mt-6 mx-auto">
-        <h3 class="mb-6 text-center text-2xl font-display">
+        <h3 class="mb-6 text-center text-2xl font-display md:text-start">
           <Trans
             key={TKEYS["landing-page"]["ready-to-launch-your-website"].title}
           />
