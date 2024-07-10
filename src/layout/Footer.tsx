@@ -1,4 +1,4 @@
-import { Trans } from "@mbarzda/solid-i18next";
+import { Trans, useTransContext } from "@mbarzda/solid-i18next";
 import { A } from "@solidjs/router";
 import { SitedIoLogo } from "~/components/assets/SitedIoLogo";
 import { TKEYS } from "~/locales";
@@ -8,11 +8,17 @@ import { privacyPolicyPath } from "~/routes/privacy-policy";
 import { termsOfServicePath } from "~/routes/terms-of-service";
 
 export function Footer() {
+  const [trans] = useTransContext();
+
   return (
     <>
       <footer class="min-h-80 text-dark dark:text-light bg-slate-200 dark:bg-slate-800">
         <div class="py-20 px-4 max-w-screen-xl mx-auto">
-          <A class="block w-fit" href={indexPath()}>
+          <A
+            class="block w-fit"
+            href={indexPath()}
+            aria-label={trans(TKEYS.header.actions["go-to-home"])}
+          >
             <SitedIoLogo noBackground />
           </A>
 

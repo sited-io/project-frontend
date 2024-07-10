@@ -1,6 +1,13 @@
 import { TKEYS } from "./keys";
 
 export const EN: typeof TKEYS = {
+  header: {
+    actions: {
+      "go-to-home": "Go to homepage",
+      "change-mode": "Change dark or light mode",
+      "change-language": "Sprache ändern / Change language",
+    },
+  },
   footer: {
     summary:
       "Empowering individuals and businesses to effortlessly create websites and online shops with automated design and comprehensive ecommerce tools.",

@@ -1,4 +1,11 @@
 export const TKEYS = {
+  header: {
+    actions: {
+      "go-to-home": "header.actions.go-to-home",
+      "change-mode": "header.actions.change-mode",
+      "change-language": "header.actions.change-language",
+    },
+  },
   footer: {
     summary: "footer.summary",
   },

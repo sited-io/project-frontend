@@ -9,7 +9,7 @@ import { LanguageIcon } from "~/components/assets/LanguageIcon";
 import { LightModeIcon } from "~/components/assets/LightModeIcon";
 import { SitedIoLogo } from "~/components/assets/SitedIoLogo";
 import { MdIconButton } from "~/components/form/MdIconButton";
-import { getNextLanguageKey } from "~/locales";
+import { getNextLanguageKey, TKEYS } from "~/locales";
 import { indexPath } from "~/routes";
 
 const LOCAL_STORAGE_THEME_KEY = "theme";
@@ -17,7 +17,7 @@ const LOCAL_STORAGE_THEME_LIGHT = "light";
 const LOCAL_STORAGE_THEME_DARK = "dark";
 
 export function Header() {
-  const [_trans, { getI18next, changeLanguage }] = useTransContext();
+  const [trans, { getI18next, changeLanguage }] = useTransContext();
 
   const [isDarkMode, setIsDarkMode] = createSignal(false);
 
@@ -78,20 +78,27 @@ export function Header() {
           aria-label="Global"
         >
           <A
-            href={indexPath()}
             class="flex items-center space-x-3 rtl:space-x-reverse"
+            href={indexPath()}
+            aria-label={trans(TKEYS.header.actions["go-to-home"])}
           >
             <SitedIoLogo />
           </A>
 
           <div>
-            <MdIconButton onClick={handleToggleTheme}>
+            <MdIconButton
+              onClick={handleToggleTheme}
+              aria-label={trans(TKEYS.header.actions["change-mode"])}
+            >
               <Show when={isDarkMode()} fallback={<DarkModeIcon />}>
                 <LightModeIcon />
               </Show>
             </MdIconButton>
 
-            <MdIconButton onClick={handleToggleLanguage}>
+            <MdIconButton
+              onClick={handleToggleLanguage}
+              aria-label={trans(TKEYS.header.actions["change-language"])}
+            >
               <LanguageIcon />
             </MdIconButton>
           </div>
