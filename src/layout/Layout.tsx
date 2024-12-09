@@ -1,10 +1,7 @@
-import { Title } from "@solidjs/meta";
 import { ParentProps } from "solid-js";
 
 import { Footer } from "./Footer";
 import { Header } from "./Header";
-import { Trans } from "@mbarzda/solid-i18next";
-import { TKEYS } from "~/locales";
 
 export function Layout(props: ParentProps) {
   return (

@@ -360,7 +360,7 @@ export default function Home() {
             key={TKEYS["landing-page"]["ready-to-launch-your-website"].title}
           />
         </h3>
-        <div class="flex flex-col justify-center md:grid md:grid-cols-2">
+        <div class="mb-32 flex flex-col justify-center md:grid md:grid-cols-2">
           <div class="my-8 px-2 py-4 md:grid md:grid-cols-subgrid md:col-span-2">
             <div class="mb-8 md:m-0">
               <h4 class="text-xl font-display font-semibold text-center md:text-start">
@@ -391,7 +391,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div class="mx-auto my-8 px-2 py-4 md:grid md:grid-cols-subgrid md:col-span-2">
+          <div class="my-8 px-2 py-4 md:grid md:grid-cols-subgrid md:col-span-2">
             <div class="mb-8 md:m-0">
               <h4 class="text-xl font-display font-semibold text-center md:text-start">
                 <Trans
@@ -421,7 +421,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div class="mt-8 mb-32 px-2 py-4 md:grid md:grid-cols-subgrid md:col-span-2">
+          <div class="mt-8 px-2 py-4 md:grid md:grid-cols-subgrid md:col-span-2">
             <div class="mb-8 md:m-0">
               <h4 class="text-xl font-display font-semibold text-center md:text-start">
                 <Trans

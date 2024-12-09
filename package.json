@@ -3,9 +3,14 @@
   "type": "module",
   "scripts": {
     "dev": "vinxi dev --port 8002",
-    "build": "vinxi build --port 8002",
+    "build": "vinxi build",
     "start": "vinxi start --port 8002",
-    "version": "vinxi version"
+    "version": "vinxi version",
+    "lint": "eslint src/**",
+    "format": "prettier --write ."
+  },
+  "engines": {
+    "node": ">=18"
   },
   "dependencies": {
     "@material/web": "^1.5.1",
@@ -20,14 +25,16 @@
     "solid-js": "^1.8.17",
     "vinxi": "^0.3.12"
   },
-  "engines": {
-    "node": ">=18"
-  },
   "devDependencies": {
+    "@eslint/js": "^9.16.0",
     "@types/lodash": "^4.17.6",
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.39",
-    "tailwindcss": "^3.4.4",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.16.0",
+    "globals": "^15.13.0",
+    "postcss": "^8.4.49",
+    "prettier": "^3.4.2",
+    "tailwindcss": "^3.4.16",
+    "typescript-eslint": "^8.17.0",
     "vitest": "^1.6.0"
   }
 }

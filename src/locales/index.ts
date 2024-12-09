@@ -32,7 +32,7 @@ export function getNextLanguageKey(currentLanguageKey: string) {
 
   let currentIndex = _.findIndex(
     languageKeys,
-    (key) => key === currentLanguageKey
+    (key) => key === currentLanguageKey,
   );
 
   // find language key with location like "en-US" --> "en"
@@ -40,7 +40,7 @@ export function getNextLanguageKey(currentLanguageKey: string) {
     const cleanedLangageKey = currentLanguageKey.split("-")[0];
     currentIndex = _.findIndex(
       languageKeys,
-      (key) => key === cleanedLangageKey
+      (key) => key === cleanedLangageKey,
     );
   }
 
